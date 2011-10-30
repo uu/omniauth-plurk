@@ -29,7 +29,7 @@ module OmniAuth
           'name' => raw_info['full_name'],
           'nickname' => raw_info['display_name'] || raw_info['nick_name'],
           'location' => raw_info['location'],
-          'image' => raw_info['has_profile_image'] == 1 ? "http://avatars.plurk.com/#{user['id']}-medium#{user['avatar']}.gif" : 'http://www.plurk.com/static/default_medium.gif',
+          'image' => raw_info['has_profile_image'] == 1 ? "http://avatars.plurk.com/#{raw_info['id']}-medium#{raw_info['avatar']}.gif" : 'http://www.plurk.com/static/default_medium.gif',
           'urls' => {'Plurk' => 'http://plurk.com/' + raw_info['nick_name']},
         }
       end
