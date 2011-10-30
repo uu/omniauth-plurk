@@ -3,9 +3,9 @@ require 'multi_json'
 
 module OmniAuth
   module Strategies
-    class Weibo < OmniAuth::Strategies::OAuth
-      option :name, 'weibo'
-      option :sign_in, true
+    class Plurk < OmniAuth::Strategies::OAuth
+      option :name, 'plurk'
+      
       def initialize(*args)
         super
         # taken from https://github.com/intridea/omniauth/blob/0-3-stable/oa-oauth/lib/omniauth/strategies/oauth/tsina.rb#L15-21
